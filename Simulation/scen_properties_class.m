@@ -101,7 +101,7 @@ classdef scen_properties_class < handle
     end % end properties
     methods
         function obj = scen_properties_class(struct)
-            for field = fieldnames(struct)'    %enumerat fields
+            for field = fieldnames(struct)'    %enumerate fields
                 try
                   obj.(field{1}) = struct.(field{1});   %and copy
                 catch

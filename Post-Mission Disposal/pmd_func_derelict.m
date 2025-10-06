@@ -6,7 +6,7 @@ function [Cpmddot] = pmd_func_derelict(t, h, species_properties, scen_properties
     %   h is the height above ellipsoid in km (unused)
     %   species_properties is a structure with properties for this species
     %   scen_properties is a structure with properties for the scenario
-    %   Cpmdot is the rate of change in the species due to post-mission
+    %   Cpmddot is the rate of change in the species due to post-mission
     %   disposal, an N_shell x 1 matrix.
     num_linked_species = length(species_properties.pmd_linked_species);
 

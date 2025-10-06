@@ -115,3 +115,5 @@ end
 % b.release();
 scen_properties.species_pairs = species_pairs_classes;
 disp('Done')
+
+end

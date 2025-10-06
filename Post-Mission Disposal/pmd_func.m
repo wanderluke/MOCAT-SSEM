@@ -1,4 +1,4 @@
-function [Cpmddot] = pmd_func_satellite(t, h, species_properties, scen_properties)
+function [Cpmddot] = pmd_func(t, h, species_properties, scen_properties)
     % static_exp_drag_func Wrapper for densityexp to be used by species
     %   constructor.
     %   t is time from scenario start in years
@@ -8,4 +8,5 @@ function [Cpmddot] = pmd_func_satellite(t, h, species_properties, scen_propertie
     %   scen_properties is a structure with properties for the scenario
     %   Cpmdot is the rate of change in the species due to post-mission disposal.
     Cpmddot = (-1/species_properties.deltat) * species_properties.sym(k);
+end
     

@@ -15,3 +15,4 @@ function [overThreshold] = isCatastrophic(mass1, mass2, vels)
     smaller_mass_g = smaller_mass * (1000/1); % kg -> grams
     energy = 1/2 * smaller_mass * vels.^2;
     overThreshold = energy/smaller_mass_g > 40; %
+end

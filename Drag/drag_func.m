@@ -32,6 +32,7 @@ function [Fdot] = drag_func(t, species_properties, scen_properties)
     end % End species_properties.drag_effected == true
 
     Fdot = sym2cell(Fdot);
+end
 
 
     

@@ -10,4 +10,4 @@ function [Lambdadot] = launch_func_null(t, h, species_properties, scen_propertie
     %   Lambdadot is the rate of change in the species in each shell at the specified time due to launch.
   
     Lambdadot = sym2cell(zeros(scen_properties.N_shell, 1, "sym") .* species_properties.sym(:));
-    end
+end

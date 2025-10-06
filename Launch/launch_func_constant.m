@@ -16,4 +16,4 @@ function [Lambdadot] = launch_func_constant(t, h, species_properties, scen_prope
     Lambdadot = ones(scen_properties.N_shell, 1, "sym") .* species_properties.lambda_constant;
     Lambdadot = sym2cell(Lambdadot);
 
-    end
+end
